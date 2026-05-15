@@ -1,0 +1,121 @@
+[
+  {
+    "ContainingType": "apbd_cw7_git_s33418.Controllers.PcsController",
+    "Method": "GetComputers",
+    "RelativePath": "api/pcs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[apbd_cw7_git_s33418.DTO.GetComputers, apbd-cw7-git-s33418, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "apbd_cw7_git_s33418.Controllers.PcsController",
+    "Method": "PostPc",
+    "RelativePath": "api/pcs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "apbd_cw7_git_s33418.DTO.PostPcRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "apbd_cw7_git_s33418.DTO.PostPcAnswer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "apbd_cw7_git_s33418.Controllers.PcsController",
+    "Method": "PutPc",
+    "RelativePath": "api/pcs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "apbd_cw7_git_s33418.DTO.PutPcRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "apbd_cw7_git_s33418.DTO.GetComputers",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "apbd_cw7_git_s33418.Controllers.PcsController",
+    "Method": "DeletePc",
+    "RelativePath": "api/pcs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "apbd_cw7_git_s33418.Controllers.PcsController",
+    "Method": "GetComponentsById",
+    "RelativePath": "api/pcs/{id}/components",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[apbd_cw7_git_s33418.DTO.GetComponentsByID, apbd-cw7-git-s33418, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
